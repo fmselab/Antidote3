@@ -105,7 +105,7 @@ CONFIG_CLEAN_VPATH_FILES =
 LTLIBRARIES = $(noinst_LTLIBRARIES)
 libcommon_la_LIBADD =
 am_libcommon_la_OBJECTS = stdconfigurations.lo context_manager.lo \
-	extconfigurations.lo service.lo
+	extconfigurations.lo service.lo fsm.lo disassociating.lo
 libcommon_la_OBJECTS = $(am_libcommon_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
@@ -308,12 +308,16 @@ INCLUDES = -I$(top_builddir) -I$(top_srcdir) -I$(top_builddir)/src -I$(top_srcdi
 libcommon_la_SOURCES = stdconfigurations.c \
 			context_manager.c \
 			extconfigurations.c \
-			service.c
+			service.c \
+			fsm.c \
+			disassociating.c
 
 noinst_HEADERS = stdconfigurations.h \
 			context_manager.h \
 			extconfigurations.h \
-			service.h
+			service.h \
+			fsm.h \
+			disassociating.h
 
 all: all-am
 
@@ -370,7 +374,9 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/context_manager.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/disassociating.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/extconfigurations.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/fsm.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/service.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/stdconfigurations.Plo@am__quote@
 

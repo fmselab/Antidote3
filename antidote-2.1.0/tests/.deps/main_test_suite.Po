@@ -97,12 +97,12 @@ main_test_suite.o: main_test_suite.c /usr/include/stdc-predef.h \
  api/testxml.h communication/testcontextmanager.h \
  ../src/communication/common/context_manager.h \
  ../src/communication/common/context.h communication/testfsm.h \
- ../src/communication/fsm.h ../src/communication/../asn1/phd_types.h \
+ ../src/communication/common/fsm.h ../src/asn1/phd_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  communication/testservice.h ../src/communication/common/service.h \
- ../src/asn1/phd_types.h ../src/communication/fsm.h \
+ ../src/asn1/phd_types.h ../src/communication/common/fsm.h \
  ../src/communication/communication.h \
  ../src/communication/plugin/plugin.h ../src/util/bytelib.h \
  ../src/communication/common/context_manager.h \
@@ -114,10 +114,10 @@ main_test_suite.o: main_test_suite.c /usr/include/stdc-predef.h \
  functional_test_cases/test_disassociating.h \
  functional_test_cases/test_epicfgscanner.h \
  functional_test_cases/test_pericfgscanner.h ../src/api/api_definitions.h \
- ../src/api/data_encoder.h ../src/asn1/phd_types.h \
- ../src/api/api_definitions.h ../src/api/data_list.h \
- ../src/api/xml_encoder.h ../src/api/api_definitions.h \
- ../src/communication/communication.h ../src/manager_p.h ../src/manager.h \
+ ../src/api/data_encoder.h ../src/api/api_definitions.h \
+ ../src/api/data_list.h ../src/api/xml_encoder.h \
+ ../src/api/api_definitions.h ../src/communication/communication.h \
+ ../src/manager_p.h ../src/manager.h \
  ../src/communication/common/service.h ../src/util/strbuff.h \
  ../src/util/ioutil.h
 
@@ -363,9 +363,9 @@ communication/testcontextmanager.h:
 
 communication/testfsm.h:
 
-../src/communication/fsm.h:
+../src/communication/common/fsm.h:
 
-../src/communication/../asn1/phd_types.h:
+../src/asn1/phd_types.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h:
 
@@ -381,7 +381,7 @@ communication/testservice.h:
 
 ../src/asn1/phd_types.h:
 
-../src/communication/fsm.h:
+../src/communication/common/fsm.h:
 
 ../src/communication/communication.h:
 
@@ -420,8 +420,6 @@ functional_test_cases/test_pericfgscanner.h:
 ../src/api/api_definitions.h:
 
 ../src/api/data_encoder.h:
-
-../src/asn1/phd_types.h:
 
 ../src/api/api_definitions.h:
 

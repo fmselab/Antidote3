@@ -13,8 +13,7 @@ test_disassociating.o: test_disassociating.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/plugin/plugin.h ../../src/util/bytelib.h \
  ../../src/communication/common/context_manager.h \
@@ -59,10 +58,10 @@ test_disassociating.o: test_disassociating.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- ../../src/communication/communication.h ../../src/communication/fsm.h \
- /usr/include/CUnit/Basic.h /usr/include/CUnit/CUnit.h \
- /usr/include/string.h /usr/include/strings.h /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ ../../src/communication/communication.h \
+ ../../src/communication/common/fsm.h /usr/include/CUnit/Basic.h \
+ /usr/include/CUnit/CUnit.h /usr/include/string.h /usr/include/strings.h \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
@@ -123,9 +122,9 @@ test_functional.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -247,7 +246,7 @@ test_functional.h:
 
 ../../src/communication/communication.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
 /usr/include/CUnit/Basic.h:
 

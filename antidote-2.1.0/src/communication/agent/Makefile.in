@@ -106,7 +106,7 @@ LTLIBRARIES = $(noinst_LTLIBRARIES)
 libagent_la_LIBADD =
 am_libagent_la_OBJECTS = agent_ops.lo agent_association.lo \
 	agent_operating.lo agent_disassociating.lo \
-	agent_configuring.lo
+	agent_configuring.lo agent_fsm.lo
 libagent_la_OBJECTS = $(am_libagent_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
@@ -310,13 +310,15 @@ libagent_la_SOURCES = agent_ops.c \
 					agent_association.c \
 					agent_operating.c \
 					agent_disassociating.c \
-					agent_configuring.c
+					agent_configuring.c \
+					agent_fsm.c
 
 noinst_HEADERS = agent_ops.h \
 					agent_association.h \
 					agent_operating.h \
 					agent_disassociating.h \
-					agent_configuring.h
+					agent_configuring.h \
+					agent_fsm.h
 
 all: all-am
 
@@ -375,6 +377,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/agent_association.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/agent_configuring.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/agent_disassociating.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/agent_fsm.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/agent_operating.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/agent_ops.Plo@am__quote@
 

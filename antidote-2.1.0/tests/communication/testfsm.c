@@ -32,7 +32,7 @@
 #include <stdio.h>
 #include "src/communication/communication.h"
 #include "src/communication/common/context_manager.h"
-#include "src/communication/fsm.h"
+#include "src/communication/common/fsm.h"
 
 void testfsm_action1(Context *ctx, fsm_events evt, FSMEventData *data);
 void testfsm_action2(Context *ctx, fsm_events evt, FSMEventData *data);

@@ -82,9 +82,8 @@ sample_agent_common.o: ../apps/sample_agent_common.c \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h ../src/manager.h \
  ../src/communication/common/context.h \
  ../src/communication/plugin/plugin.h ../src/util/bytelib.h \
- ../src/communication/common/service.h ../src/communication/fsm.h \
- ../src/communication/../asn1/phd_types.h \
- ../src/communication/communication.h \
+ ../src/communication/common/service.h ../src/communication/common/fsm.h \
+ ../src/asn1/phd_types.h ../src/communication/communication.h \
  ../src/communication/common/context_manager.h \
  ../src/communication/plugin/plugin_tcp_agent.h \
  ../src/specializations/pulse_oximeter.h \
@@ -298,9 +297,9 @@ sample_agent_common.o: ../apps/sample_agent_common.c \
 
 ../src/communication/common/service.h:
 
-../src/communication/fsm.h:
+../src/communication/common/fsm.h:
 
-../src/communication/../asn1/phd_types.h:
+../src/asn1/phd_types.h:
 
 ../src/communication/communication.h:
 

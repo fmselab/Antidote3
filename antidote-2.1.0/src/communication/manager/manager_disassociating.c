@@ -120,48 +120,6 @@ void disassociating_release_request_tx(Context *ctx, fsm_events evt,
 }
 
 /**
- *  Listen to fsm event and send Release Response APDU - normal release
- *
- * @param ctx context
- * @param evt input event
- * @param data (ignored; refilled with NORMAL reason)
- */
-void disassociating_release_request_normal_tx(Context *ctx, fsm_events evt,
-						FSMEventData *data)
-{
-	APDU apdu;
-	apdu.choice = RLRQ_CHOSEN;
-	apdu.length = sizeof(RLRQ_apdu);
-	apdu.u.rlrq.reason = RELEASE_REQUEST_REASON_NORMAL;
-
-	DEBUG("releasing association request normal tx (normal) - APDU <%d>", apdu.choice);
-
-	if (communication_send_apdu(ctx, &apdu)) {
-		communication_count_timeout(ctx, &communication_timeout,
-						ASSOCIATION_TO_RELEASE);
-	}
-}
-
-/**
- *  Listen to fsm event and send Release Response APDU
- *
- * @param ctx context
- * @param evt input event
- * @param dummy Dummy event data
- */
-void disassociating_release_response_tx_normal(Context *ctx, fsm_events evt,
-					FSMEventData *dummy)
-{
-	FSMEventData data;
-	data.choice = FSM_EVT_DATA_RELEASE_RESPONSE_REASON;
-	data.u.release_response_reason = RELEASE_RESPONSE_REASON_NORMAL;
-
-	DEBUG("releasing association response normal tx(normal)");
-
-	disassociating_release_response_tx(ctx, evt, &data);
-}
-
-/**
  *  Listen to fsm event and send Release Response APDU
  *
  * @param ctx context

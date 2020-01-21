@@ -29,7 +29,7 @@
  * \date May 31, 2011
  */
 
-#include "communication/fsm.h"
+#include "communication/agent/agent_fsm.h"
 #include "communication/agent/agent_ops.h"
 #include "communication/communication.h"
 #include "communication/common/service.h"

@@ -105,7 +105,8 @@ CONFIG_CLEAN_VPATH_FILES =
 LTLIBRARIES = $(noinst_LTLIBRARIES)
 libmanager_la_LIBADD =
 am_libmanager_la_OBJECTS = manager_association.lo manager_operating.lo \
-	manager_disassociating.lo manager_configuring.lo
+	manager_disassociating.lo manager_configuring.lo \
+	manager_fsm.lo
 libmanager_la_OBJECTS = $(am_libmanager_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
@@ -174,13 +175,13 @@ ETAGS = etags
 CTAGS = ctags
 am__DIST_COMMON = $(srcdir)/Makefile.in $(top_srcdir)/depcomp
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing autoconf
-AUTOHEADER = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing autoheader
-AUTOMAKE = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing automake-1.15
+AUTOCONF = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing autoconf
+AUTOHEADER = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing autoheader
+AUTOMAKE = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing automake-1.15
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -222,7 +223,7 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing makeinfo
+MAKEINFO = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -250,10 +251,10 @@ STRIP = strip
 USB1_CFLAGS = -I/usr/include/libusb-1.0
 USB1_LIBS = -lusb-1.0
 VERSION = 2.1
-abs_builddir = /home/bombarda/git/repository/antidote-2.1.0/src/communication/manager
-abs_srcdir = /home/bombarda/git/repository/antidote-2.1.0/src/communication/manager
-abs_top_builddir = /home/bombarda/git/repository/antidote-2.1.0
-abs_top_srcdir = /home/bombarda/git/repository/antidote-2.1.0
+abs_builddir = /home/bombarda/health/antidote-2.1.0/src/communication/manager
+abs_srcdir = /home/bombarda/health/antidote-2.1.0/src/communication/manager
+abs_top_builddir = /home/bombarda/health/antidote-2.1.0
+abs_top_srcdir = /home/bombarda/health/antidote-2.1.0
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -282,7 +283,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/install-sh
+install_sh = ${SHELL} /home/bombarda/health/antidote-2.1.0/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -308,12 +309,14 @@ INCLUDES = -I$(top_builddir) -I$(top_srcdir) -I$(top_builddir)/src -I$(top_srcdi
 libmanager_la_SOURCES = manager_association.c \
 			manager_operating.c \
 			manager_disassociating.c \
-			manager_configuring.c
+			manager_configuring.c \
+			manager_fsm.c
 
 noinst_HEADERS = manager_association.h \
 			manager_operating.h \
 			manager_disassociating.h \
-			manager_configuring.h
+			manager_configuring.h \
+			manager_fsm.h
 
 all: all-am
 
@@ -372,6 +375,7 @@ distclean-compile:
 include ./$(DEPDIR)/manager_association.Plo
 include ./$(DEPDIR)/manager_configuring.Plo
 include ./$(DEPDIR)/manager_disassociating.Plo
+include ./$(DEPDIR)/manager_fsm.Plo
 include ./$(DEPDIR)/manager_operating.Plo
 
 .c.o:

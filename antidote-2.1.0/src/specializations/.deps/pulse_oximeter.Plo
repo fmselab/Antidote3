@@ -55,8 +55,7 @@ pulse_oximeter.lo: pulse_oximeter.c /usr/include/stdc-predef.h \
  ../../src/dim/numeric.h ../../src/dim/rtsa.h ../../src/dim/pmstore.h \
  ../../src/dim/nomenclature.h ../../src/dim/pmsegment.h \
  ../../src/util/bytelib.h ../../src/communication/common/service.h \
- ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/plugin/plugin.h \
  ../../src/communication/common/context_manager.h \
@@ -68,7 +67,7 @@ pulse_oximeter.lo: pulse_oximeter.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- ../../src/asn1/phd_types.h ../../src/communication/parser/encoder_ASN1.h \
+ ../../src/communication/parser/encoder_ASN1.h \
  ../../src/dim/nomenclature.h ../../src/dim/mds.h
 
 /usr/include/stdc-predef.h:
@@ -213,9 +212,9 @@ pulse_oximeter.h:
 
 ../../src/communication/common/service.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -246,8 +245,6 @@ pulse_oximeter.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-../../src/asn1/phd_types.h:
 
 ../../src/communication/parser/encoder_ASN1.h:
 

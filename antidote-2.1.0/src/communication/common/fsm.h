@@ -36,7 +36,7 @@
 #ifndef FSM_H_
 #define FSM_H_
 
-#include "../asn1/phd_types.h"
+#include "src/asn1/phd_types.h"
 
 /**
  *  Machine States
@@ -225,9 +225,6 @@ typedef struct FsmTransitionRule {
 FSM *fsm_instance();
 
 void fsm_destroy(FSM *fsm);
-
-void fsm_set_manager_state_table(FSM *fsm);
-void fsm_set_agent_state_table(FSM *fsm);
 
 void fsm_init(FSM *fsm, fsm_states entry_point_state, FsmTransitionRule *transition_table, int table_size);
 

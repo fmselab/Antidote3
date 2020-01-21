@@ -104,7 +104,7 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 LTLIBRARIES = $(noinst_LTLIBRARIES)
 libcom_la_LIBADD =
-am_libcom_la_OBJECTS = communication.lo fsm.lo
+am_libcom_la_OBJECTS = communication.lo
 libcom_la_OBJECTS = $(am_libcom_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
@@ -347,12 +347,8 @@ top_srcdir = @top_srcdir@
 SUBDIRS = parser plugin agent common manager
 INCLUDES = -I$(top_builddir) -I$(top_srcdir) -I$(top_builddir)/src -I$(top_srcdir)/src
 noinst_LTLIBRARIES = libcom.la
-libcom_la_SOURCES = communication.c \
-                   fsm.c 
-
-noinst_HEADERS = communication.h \
-                 fsm.h
-
+libcom_la_SOURCES = communication.c
+noinst_HEADERS = communication.h 
 all: all-recursive
 
 .SUFFIXES:
@@ -408,7 +404,6 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/communication.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/fsm.Plo@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

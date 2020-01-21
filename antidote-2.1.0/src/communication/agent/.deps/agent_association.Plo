@@ -50,15 +50,15 @@ agent_association.lo: agent_association.c /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- ../../../src/communication/fsm.h \
- ../../../src/communication/../asn1/phd_types.h \
+ ../../../src/communication/agent/agent_fsm.h \
+ ../../../src/communication/common/fsm.h \
  ../../../src/communication/common/context.h ../../../src/agent_p.h \
  ../../../src/agent.h ../../../src/api/api_definitions.h \
  ../../../src/communication/common/context.h \
  ../../../src/communication/plugin/plugin.h ../../../src/util/bytelib.h \
  ../../../src/asn1/phd_types.h \
  ../../../src/communication/common/service.h \
- ../../../src/communication/fsm.h \
+ ../../../src/communication/common/fsm.h \
  ../../../src/communication/communication.h \
  ../../../src/communication/common/context_manager.h \
  ../../../src/communication/communication.h \
@@ -194,9 +194,9 @@ agent_association.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-../../../src/communication/fsm.h:
+../../../src/communication/agent/agent_fsm.h:
 
-../../../src/communication/../asn1/phd_types.h:
+../../../src/communication/common/fsm.h:
 
 ../../../src/communication/common/context.h:
 
@@ -216,7 +216,7 @@ agent_association.h:
 
 ../../../src/communication/common/service.h:
 
-../../../src/communication/fsm.h:
+../../../src/communication/common/fsm.h:
 
 ../../../src/communication/communication.h:
 

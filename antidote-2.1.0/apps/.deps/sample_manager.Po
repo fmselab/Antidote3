@@ -63,9 +63,8 @@ sample_manager.o: sample_manager.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  ../src/communication/common/context.h \
  ../src/communication/plugin/plugin.h ../src/util/bytelib.h \
- ../src/communication/common/service.h ../src/communication/fsm.h \
- ../src/communication/../asn1/phd_types.h \
- ../src/communication/communication.h \
+ ../src/communication/common/service.h ../src/communication/common/fsm.h \
+ ../src/asn1/phd_types.h ../src/communication/communication.h \
  ../src/communication/common/context_manager.h \
  ../src/communication/plugin/plugin_tcp.h ../src/util/log.h
 
@@ -229,9 +228,9 @@ sample_manager.o: sample_manager.c /usr/include/stdc-predef.h \
 
 ../src/communication/common/service.h:
 
-../src/communication/fsm.h:
+../src/communication/common/fsm.h:
 
-../src/communication/../asn1/phd_types.h:
+../src/asn1/phd_types.h:
 
 ../src/communication/communication.h:
 

@@ -51,8 +51,7 @@ manager_disassociating.lo: manager_disassociating.c \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../../../src/communication/communication.h \
- ../../../src/communication/fsm.h \
- ../../../src/communication/../asn1/phd_types.h \
+ ../../../src/communication/common/fsm.h \
  ../../../src/communication/plugin/plugin.h ../../../src/util/bytelib.h \
  ../../../src/asn1/phd_types.h \
  ../../../src/communication/common/context_manager.h \
@@ -177,9 +176,7 @@ manager_disassociating.lo: manager_disassociating.c \
 
 ../../../src/communication/communication.h:
 
-../../../src/communication/fsm.h:
-
-../../../src/communication/../asn1/phd_types.h:
+../../../src/communication/common/fsm.h:
 
 ../../../src/communication/plugin/plugin.h:
 

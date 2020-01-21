@@ -42,8 +42,8 @@ peri_cfg_scanner.lo: peri_cfg_scanner.c /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- ../../src/communication/common/service.h ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/service.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/plugin/plugin.h ../../src/util/bytelib.h \
  ../../src/communication/common/context_manager.h \
@@ -60,8 +60,7 @@ peri_cfg_scanner.lo: peri_cfg_scanner.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  ../../src/api/api_definitions.h ../../src/api/data_encoder.h \
- ../../src/asn1/phd_types.h ../../src/api/api_definitions.h \
- ../../src/api/data_list.h
+ ../../src/api/api_definitions.h ../../src/api/data_list.h
 
 /usr/include/stdc-predef.h:
 
@@ -165,9 +164,9 @@ cfg_scanner.h:
 
 ../../src/communication/common/service.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -238,8 +237,6 @@ rtsa.h:
 ../../src/api/api_definitions.h:
 
 ../../src/api/data_encoder.h:
-
-../../src/asn1/phd_types.h:
 
 ../../src/api/api_definitions.h:
 

@@ -50,18 +50,16 @@ pmstore.lo: pmstore.c /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h pmsegment.h \
  ../../src/util/bytelib.h ../../src/communication/common/service.h \
- ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/plugin/plugin.h \
  ../../src/communication/common/context_manager.h \
  ../../src/communication/common/context.h ../../src/api/api_definitions.h \
  pmstore_req.h ../../src/api/api_definitions.h \
- ../../src/api/data_encoder.h ../../src/asn1/phd_types.h \
- ../../src/api/api_definitions.h ../../src/api/data_list.h \
- ../../src/api/data_list.h ../../src/api/text_encoder.h \
- ../../src/util/dateutil.h /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
+ ../../src/api/data_encoder.h ../../src/api/api_definitions.h \
+ ../../src/api/data_list.h ../../src/api/data_list.h \
+ ../../src/api/text_encoder.h ../../src/util/dateutil.h \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
@@ -211,9 +209,9 @@ pmsegment.h:
 
 ../../src/communication/common/service.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -230,8 +228,6 @@ pmstore_req.h:
 ../../src/api/api_definitions.h:
 
 ../../src/api/data_encoder.h:
-
-../../src/asn1/phd_types.h:
 
 ../../src/api/api_definitions.h:
 

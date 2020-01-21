@@ -67,8 +67,8 @@ testpmstore.o: testpmstore.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../../src/dim/pmsegment.h ../../src/util/bytelib.h \
- ../../src/communication/common/service.h ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/service.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/plugin/plugin.h \
  ../../src/communication/common/context_manager.h \
@@ -77,8 +77,7 @@ testpmstore.o: testpmstore.c /usr/include/stdc-predef.h \
  /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- ../../src/asn1/phd_types.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h
 
 /usr/include/stdc-predef.h:
 
@@ -254,9 +253,9 @@ testpmstore.h:
 
 ../../src/communication/common/service.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -283,5 +282,3 @@ testdateutil.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-../../src/asn1/phd_types.h:

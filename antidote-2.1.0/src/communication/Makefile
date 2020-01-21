@@ -104,7 +104,7 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 LTLIBRARIES = $(noinst_LTLIBRARIES)
 libcom_la_LIBADD =
-am_libcom_la_OBJECTS = communication.lo fsm.lo
+am_libcom_la_OBJECTS = communication.lo
 libcom_la_OBJECTS = $(am_libcom_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
@@ -215,13 +215,13 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing autoconf
-AUTOHEADER = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing autoheader
-AUTOMAKE = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing automake-1.15
+AUTOCONF = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing autoconf
+AUTOHEADER = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing autoheader
+AUTOMAKE = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing automake-1.15
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -263,7 +263,7 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing makeinfo
+MAKEINFO = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -291,10 +291,10 @@ STRIP = strip
 USB1_CFLAGS = -I/usr/include/libusb-1.0
 USB1_LIBS = -lusb-1.0
 VERSION = 2.1
-abs_builddir = /home/bombarda/git/repository/antidote-2.1.0/src/communication
-abs_srcdir = /home/bombarda/git/repository/antidote-2.1.0/src/communication
-abs_top_builddir = /home/bombarda/git/repository/antidote-2.1.0
-abs_top_srcdir = /home/bombarda/git/repository/antidote-2.1.0
+abs_builddir = /home/bombarda/health/antidote-2.1.0/src/communication
+abs_srcdir = /home/bombarda/health/antidote-2.1.0/src/communication
+abs_top_builddir = /home/bombarda/health/antidote-2.1.0
+abs_top_srcdir = /home/bombarda/health/antidote-2.1.0
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -323,7 +323,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/install-sh
+install_sh = ${SHELL} /home/bombarda/health/antidote-2.1.0/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -347,12 +347,8 @@ top_srcdir = ../..
 SUBDIRS = parser plugin agent common manager
 INCLUDES = -I$(top_builddir) -I$(top_srcdir) -I$(top_builddir)/src -I$(top_srcdir)/src
 noinst_LTLIBRARIES = libcom.la
-libcom_la_SOURCES = communication.c \
-                   fsm.c 
-
-noinst_HEADERS = communication.h \
-                 fsm.h
-
+libcom_la_SOURCES = communication.c
+noinst_HEADERS = communication.h 
 all: all-recursive
 
 .SUFFIXES:
@@ -408,7 +404,6 @@ distclean-compile:
 	-rm -f *.tab.c
 
 include ./$(DEPDIR)/communication.Plo
-include ./$(DEPDIR)/fsm.Plo
 
 .c.o:
 	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

@@ -6,10 +6,12 @@ libagent_la_SOURCES = agent_ops.c \
 					agent_association.c \
 					agent_operating.c \
 					agent_disassociating.c \
-					agent_configuring.c
+					agent_configuring.c \
+					agent_fsm.c
 
 noinst_HEADERS = agent_ops.h \
 					agent_association.h \
 					agent_operating.h \
 					agent_disassociating.h \
-					agent_configuring.h
+					agent_configuring.h \
+					agent_fsm.h

@@ -56,16 +56,17 @@ communication.lo: communication.c /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- ../../src/communication/common/service.h ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/service.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/common/context_manager.h ../../src/agent_p.h \
  ../../src/agent.h ../../src/communication/common/service.h \
- ../../src/trans/trans.h ../../src/asn1/phd_types.h \
- ../../src/communication/common/context.h \
+ ../../src/trans/trans.h ../../src/communication/common/context.h \
  ../../src/communication/common/context_manager.h \
  ../../src/communication/communication.h agent/agent_association.h \
- ../../src/communication/fsm.h manager/manager_association.h \
+ ../../src/communication/agent/agent_fsm.h \
+ ../../src/communication/common/fsm.h manager/manager_association.h \
+ ../../src/communication/manager/manager_fsm.h \
  ../../src/communication/common/communication_p.h \
  ../../src/communication/manager/manager_operating.h \
  ../../src/communication/agent/agent_operating.h \
@@ -216,9 +217,9 @@ communication.lo: communication.c /usr/include/stdc-predef.h \
 
 ../../src/communication/common/service.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -232,8 +233,6 @@ communication.lo: communication.c /usr/include/stdc-predef.h \
 
 ../../src/trans/trans.h:
 
-../../src/asn1/phd_types.h:
-
 ../../src/communication/common/context.h:
 
 ../../src/communication/common/context_manager.h:
@@ -242,9 +241,13 @@ communication.lo: communication.c /usr/include/stdc-predef.h \
 
 agent/agent_association.h:
 
-../../src/communication/fsm.h:
+../../src/communication/agent/agent_fsm.h:
+
+../../src/communication/common/fsm.h:
 
 manager/manager_association.h:
+
+../../src/communication/manager/manager_fsm.h:
 
 ../../src/communication/common/communication_p.h:
 

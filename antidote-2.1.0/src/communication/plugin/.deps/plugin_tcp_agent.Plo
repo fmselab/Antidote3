@@ -1,7 +1,6 @@
 plugin_tcp_agent.lo: plugin_tcp_agent.c /usr/include/stdc-predef.h \
  ../../../src/util/strbuff.h ../../../src/communication/communication.h \
- ../../../src/communication/fsm.h \
- ../../../src/communication/../asn1/phd_types.h \
+ ../../../src/communication/common/fsm.h ../../../src/asn1/phd_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -49,8 +48,7 @@ plugin_tcp_agent.lo: plugin_tcp_agent.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- ../../../src/asn1/phd_types.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
@@ -87,9 +85,9 @@ plugin_tcp_agent.lo: plugin_tcp_agent.c /usr/include/stdc-predef.h \
 
 ../../../src/communication/communication.h:
 
-../../../src/communication/fsm.h:
+../../../src/communication/common/fsm.h:
 
-../../../src/communication/../asn1/phd_types.h:
+../../../src/asn1/phd_types.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h:
 
@@ -196,8 +194,6 @@ plugin_tcp_agent.lo: plugin_tcp_agent.c /usr/include/stdc-predef.h \
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-../../../src/asn1/phd_types.h:
 
 /usr/include/stdlib.h:
 

@@ -271,13 +271,13 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing autoconf
-AUTOHEADER = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing autoheader
-AUTOMAKE = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing automake-1.15
+AUTOCONF = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing autoconf
+AUTOHEADER = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing autoheader
+AUTOMAKE = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing automake-1.15
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
@@ -319,7 +319,7 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/missing makeinfo
+MAKEINFO = ${SHELL} /home/bombarda/health/antidote-2.1.0/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -347,10 +347,10 @@ STRIP = strip
 USB1_CFLAGS = -I/usr/include/libusb-1.0
 USB1_LIBS = -lusb-1.0
 VERSION = 2.1
-abs_builddir = /home/bombarda/git/repository/antidote-2.1.0/src
-abs_srcdir = /home/bombarda/git/repository/antidote-2.1.0/src
-abs_top_builddir = /home/bombarda/git/repository/antidote-2.1.0
-abs_top_srcdir = /home/bombarda/git/repository/antidote-2.1.0
+abs_builddir = /home/bombarda/health/antidote-2.1.0/src
+abs_srcdir = /home/bombarda/health/antidote-2.1.0/src
+abs_top_builddir = /home/bombarda/health/antidote-2.1.0
+abs_top_srcdir = /home/bombarda/health/antidote-2.1.0
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -379,7 +379,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/bombarda/git/repository/antidote-2.1.0/install-sh
+install_sh = ${SHELL} /home/bombarda/health/antidote-2.1.0/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -446,7 +446,9 @@ antidote_include_asn1_HEADERS = asn1/phd_types.h
 antidote_include_communicationdir = $(pkgincludedir)/communication
 antidote_include_communication_HEADERS = communication/common/context.h \
 					communication/common/service.h \
-					communication/fsm.h \
+					communication/common/fsm.h \
+					communication/agent/agent_fsm.h \
+					communication/manager/manager_fsm.h \
 					communication/communication.h
 
 antidote_include_dimdir = $(pkgincludedir)/dim

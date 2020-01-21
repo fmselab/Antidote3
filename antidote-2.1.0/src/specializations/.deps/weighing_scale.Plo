@@ -55,8 +55,7 @@ weighing_scale.lo: weighing_scale.c /usr/include/stdc-predef.h \
  ../../src/dim/numeric.h ../../src/dim/rtsa.h ../../src/dim/pmstore.h \
  ../../src/dim/nomenclature.h ../../src/dim/pmsegment.h \
  ../../src/util/bytelib.h ../../src/communication/common/service.h \
- ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/plugin/plugin.h \
  ../../src/communication/common/context_manager.h \
@@ -68,8 +67,8 @@ weighing_scale.lo: weighing_scale.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- ../../src/asn1/phd_types.h ../../src/communication/parser/encoder_ASN1.h \
- ../../src/dim/mds.h ../../src/util/log.h
+ ../../src/communication/parser/encoder_ASN1.h ../../src/dim/mds.h \
+ ../../src/util/log.h
 
 /usr/include/stdc-predef.h:
 
@@ -213,9 +212,9 @@ weighing_scale.h:
 
 ../../src/communication/common/service.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -248,8 +247,6 @@ weighing_scale.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-../../src/asn1/phd_types.h:
 
 ../../src/communication/parser/encoder_ASN1.h:
 

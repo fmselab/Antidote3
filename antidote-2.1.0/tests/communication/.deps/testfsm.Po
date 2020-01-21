@@ -1,6 +1,5 @@
 testfsm.o: testfsm.c /usr/include/stdc-predef.h testfsm.h \
- ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -44,7 +43,8 @@ testfsm.o: testfsm.c /usr/include/stdc-predef.h testfsm.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- ../../src/communication/communication.h ../../src/communication/fsm.h \
+ ../../src/communication/communication.h \
+ ../../src/communication/common/fsm.h \
  ../../src/communication/plugin/plugin.h ../../src/util/bytelib.h \
  ../../src/asn1/phd_types.h \
  ../../src/communication/common/context_manager.h \
@@ -55,9 +55,9 @@ testfsm.o: testfsm.c /usr/include/stdc-predef.h testfsm.h \
 
 testfsm.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h:
 
@@ -167,7 +167,7 @@ testfsm.h:
 
 ../../src/communication/communication.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
 ../../src/communication/plugin/plugin.h:
 

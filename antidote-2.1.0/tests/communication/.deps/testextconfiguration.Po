@@ -50,8 +50,7 @@ testextconfiguration.o: testextconfiguration.c /usr/include/stdc-predef.h \
  ../../src/dim/numeric.h ../../src/dim/rtsa.h ../../src/dim/pmstore.h \
  ../../src/dim/nomenclature.h ../../src/dim/pmsegment.h \
  ../../src/util/bytelib.h ../../src/communication/common/service.h \
- ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/plugin/plugin.h \
  ../../src/communication/common/context_manager.h \
@@ -86,7 +85,7 @@ testextconfiguration.o: testextconfiguration.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  ../../src/communication/common/extconfigurations.h \
- ../../src/asn1/phd_types.h testextconfiguration.h
+ testextconfiguration.h
 
 /usr/include/stdc-predef.h:
 
@@ -220,9 +219,9 @@ testextconfiguration.o: testextconfiguration.c /usr/include/stdc-predef.h \
 
 ../../src/communication/common/service.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -315,7 +314,5 @@ testextconfiguration.o: testextconfiguration.c /usr/include/stdc-predef.h \
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
 
 ../../src/communication/common/extconfigurations.h:
-
-../../src/asn1/phd_types.h:
 
 testextconfiguration.h:

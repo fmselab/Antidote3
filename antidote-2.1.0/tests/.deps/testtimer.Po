@@ -56,9 +56,8 @@ testtimer.o: testtimer.c /usr/include/stdc-predef.h \
  /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- ../src/communication/common/service.h ../src/communication/fsm.h \
- ../src/communication/../asn1/phd_types.h \
- ../src/communication/communication.h \
+ ../src/communication/common/service.h ../src/communication/common/fsm.h \
+ ../src/asn1/phd_types.h ../src/communication/communication.h \
  ../src/communication/common/context_manager.h testtimer.h \
  functional_test_cases/test_functional.h \
  ../src/communication/common/service.h ../src/dim/mds.h ../src/dim/dim.h \
@@ -231,9 +230,9 @@ testtimer.o: testtimer.c /usr/include/stdc-predef.h \
 
 ../src/communication/common/service.h:
 
-../src/communication/fsm.h:
+../src/communication/common/fsm.h:
 
-../src/communication/../asn1/phd_types.h:
+../src/asn1/phd_types.h:
 
 ../src/communication/communication.h:
 

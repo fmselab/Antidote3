@@ -31,7 +31,7 @@
 
 #ifdef TEST_ENABLED
 
-#include "src/communication/fsm.h"
+#include "src/communication/common/fsm.h"
 
 void testfsm_add_suite();
 void test_fsm();

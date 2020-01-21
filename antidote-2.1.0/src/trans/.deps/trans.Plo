@@ -21,8 +21,8 @@ trans.lo: trans.c /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  ../../src/communication/common/context_manager.h \
  ../../src/communication/common/context.h \
- ../../src/communication/communication.h ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/communication.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
@@ -33,7 +33,6 @@ trans.lo: trans.c /usr/include/stdc-predef.h /usr/include/string.h \
  ../../src/communication/parser/struct_cleaner.h \
  ../../src/communication/parser/../../asn1/phd_types.h \
  ../../src/communication/manager/manager_configuring.h \
- ../../src/asn1/phd_types.h \
  ../../src/communication/agent/agent_configuring.h ../../src/dim/mds.h \
  ../../src/api/api_definitions.h ../../src/dim/dim.h \
  ../../src/dim/enumeration.h ../../src/dim/metric.h ../../src/dim/dim.h \
@@ -69,8 +68,11 @@ trans.lo: trans.c /usr/include/stdc-predef.h /usr/include/string.h \
  ../../src/dim/peri_cfg_scanner.h ../../src/dim/cfg_scanner.h \
  ../../src/dim/epi_cfg_scanner.h trans.h \
  ../../src/communication/common/context.h \
- ../communication/agent/agent_association.h ../../src/communication/fsm.h \
- ../communication/manager/manager_association.h
+ ../communication/agent/agent_association.h \
+ ../../src/communication/agent/agent_fsm.h \
+ ../../src/communication/common/fsm.h \
+ ../communication/manager/manager_association.h \
+ ../../src/communication/manager/manager_fsm.h
 
 /usr/include/stdc-predef.h:
 
@@ -130,9 +132,9 @@ trans.lo: trans.c /usr/include/stdc-predef.h /usr/include/string.h \
 
 ../../src/communication/communication.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h:
 
@@ -157,8 +159,6 @@ trans.lo: trans.c /usr/include/stdc-predef.h /usr/include/string.h \
 ../../src/communication/parser/../../asn1/phd_types.h:
 
 ../../src/communication/manager/manager_configuring.h:
-
-../../src/asn1/phd_types.h:
 
 ../../src/communication/agent/agent_configuring.h:
 
@@ -258,6 +258,10 @@ trans.h:
 
 ../communication/agent/agent_association.h:
 
-../../src/communication/fsm.h:
+../../src/communication/agent/agent_fsm.h:
+
+../../src/communication/common/fsm.h:
 
 ../communication/manager/manager_association.h:
+
+../../src/communication/manager/manager_fsm.h:

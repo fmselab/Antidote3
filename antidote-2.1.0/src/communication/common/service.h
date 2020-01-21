@@ -47,7 +47,7 @@
 #define SERVICE_H_
 
 #include <asn1/phd_types.h>
-#include <communication/fsm.h>
+#include <communication/common/fsm.h>
 #include <communication/communication.h>
 
 /**

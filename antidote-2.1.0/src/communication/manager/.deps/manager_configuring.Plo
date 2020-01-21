@@ -55,8 +55,7 @@ manager_configuring.lo: manager_configuring.c /usr/include/stdc-predef.h \
  ../../../src/dim/rtsa.h ../../../src/dim/pmstore.h \
  ../../../src/dim/nomenclature.h ../../../src/dim/pmsegment.h \
  ../../../src/util/bytelib.h ../../../src/communication/common/service.h \
- ../../../src/communication/fsm.h \
- ../../../src/communication/../asn1/phd_types.h \
+ ../../../src/communication/common/fsm.h ../../../src/asn1/phd_types.h \
  ../../../src/communication/communication.h \
  ../../../src/communication/plugin/plugin.h \
  ../../../src/communication/common/context_manager.h \
@@ -65,9 +64,9 @@ manager_configuring.lo: manager_configuring.c /usr/include/stdc-predef.h \
  ../../../src/dim/epi_cfg_scanner.h ../../../src/dim/nomenclature.h \
  ../../../src/communication/communication.h \
  ../../../src/communication/manager/manager_configuring.h \
- ../../../src/asn1/phd_types.h \
  ../../../src/communication/manager/manager_association.h \
- ../../../src/communication/fsm.h \
+ ../../../src/communication/manager/manager_fsm.h \
+ ../../../src/communication/common/fsm.h \
  ../../../src/communication/common/context.h \
  ../../../src/communication/common/service.h \
  ../../../src/communication/common/stdconfigurations.h \
@@ -219,9 +218,9 @@ manager_configuring.lo: manager_configuring.c /usr/include/stdc-predef.h \
 
 ../../../src/communication/common/service.h:
 
-../../../src/communication/fsm.h:
+../../../src/communication/common/fsm.h:
 
-../../../src/communication/../asn1/phd_types.h:
+../../../src/asn1/phd_types.h:
 
 ../../../src/communication/communication.h:
 
@@ -245,11 +244,11 @@ manager_configuring.lo: manager_configuring.c /usr/include/stdc-predef.h \
 
 ../../../src/communication/manager/manager_configuring.h:
 
-../../../src/asn1/phd_types.h:
-
 ../../../src/communication/manager/manager_association.h:
 
-../../../src/communication/fsm.h:
+../../../src/communication/manager/manager_fsm.h:
+
+../../../src/communication/common/fsm.h:
 
 ../../../src/communication/common/context.h:
 

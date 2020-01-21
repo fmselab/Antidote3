@@ -39,7 +39,7 @@
 #define OPERATING_MANAGER_H_
 
 #include "src/asn1/phd_types.h"
-#include "src/communication/fsm.h"
+#include "src/communication/manager/manager_fsm.h"
 #include "src/communication/common/service.h"
 
 /*

@@ -32,7 +32,7 @@
 #ifndef AGENT_H_
 #define AGENT_H_
 
-#include "communication/fsm.h"
+#include "communication/agent/agent_fsm.h"
 
 void communication_agent_roer_no_tx(FSMContext *ctx, fsm_events evt, FSMEventData *data);
 void communication_agent_roiv_respond_tx(FSMContext *ctx, fsm_events evt, FSMEventData *data);

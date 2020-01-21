@@ -44,13 +44,7 @@ void disassociating_process_apdu(Context *ctx, APDU *apdu);
 void disassociating_release_request_tx(Context *ctx, fsm_events evt,
 				       FSMEventData *data);
 
-void disassociating_release_request_normal_tx(Context *ctx, fsm_events evt,
-						FSMEventData *data);
-
 void disassociating_release_response_tx(Context *ctx, fsm_events evt,
-					FSMEventData *data);
-
-void disassociating_release_response_tx_normal(Context *ctx, fsm_events evt,
 					FSMEventData *data);
 
 void disassociating_release_proccess_completed(Context *ctx, fsm_events evt,

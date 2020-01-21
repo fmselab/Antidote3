@@ -54,11 +54,11 @@ agent.lo: agent.c /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- ../src/communication/common/service.h communication/fsm.h \
- communication/../asn1/phd_types.h communication/communication.h \
+ ../src/communication/common/service.h communication/common/fsm.h \
+ ../src/asn1/phd_types.h communication/communication.h \
  communication/common/context_manager.h ../src/api/data_encoder.h \
- ../src/asn1/phd_types.h ../src/api/api_definitions.h \
- ../src/api/data_list.h ../src/communication/plugin/plugin.h \
+ ../src/api/api_definitions.h ../src/api/data_list.h \
+ ../src/communication/plugin/plugin.h \
  ../src/communication/communication.h \
  ../src/communication/agent/agent_configuring.h \
  ../src/communication/common/stdconfigurations.h dim/mds.h dim/dim.h \
@@ -210,17 +210,15 @@ asn1/phd_types.h:
 
 ../src/communication/common/service.h:
 
-communication/fsm.h:
+communication/common/fsm.h:
 
-communication/../asn1/phd_types.h:
+../src/asn1/phd_types.h:
 
 communication/communication.h:
 
 communication/common/context_manager.h:
 
 ../src/api/data_encoder.h:
-
-../src/asn1/phd_types.h:
 
 ../src/api/api_definitions.h:
 

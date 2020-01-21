@@ -56,8 +56,7 @@ blood_pressure_monitor.lo: blood_pressure_monitor.c \
  ../../src/dim/numeric.h ../../src/dim/rtsa.h ../../src/dim/pmstore.h \
  ../../src/dim/nomenclature.h ../../src/dim/pmsegment.h \
  ../../src/util/bytelib.h ../../src/communication/common/service.h \
- ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/plugin/plugin.h \
  ../../src/communication/common/context_manager.h \
@@ -70,7 +69,7 @@ blood_pressure_monitor.lo: blood_pressure_monitor.c \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- ../../src/asn1/phd_types.h ../../src/communication/parser/encoder_ASN1.h \
+ ../../src/communication/parser/encoder_ASN1.h \
  ../../src/communication/parser/struct_cleaner.h \
  ../../src/communication/parser/../../asn1/phd_types.h
 
@@ -216,9 +215,9 @@ blood_pressure_monitor.lo: blood_pressure_monitor.c \
 
 ../../src/communication/common/service.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -253,8 +252,6 @@ blood_pressure_monitor.lo: blood_pressure_monitor.c \
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-../../src/asn1/phd_types.h:
 
 ../../src/communication/parser/encoder_ASN1.h:
 

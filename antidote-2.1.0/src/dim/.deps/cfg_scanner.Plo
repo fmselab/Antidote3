@@ -49,8 +49,8 @@ cfg_scanner.lo: cfg_scanner.c /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- ../../src/communication/common/service.h ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/service.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/plugin/plugin.h ../../src/util/bytelib.h \
  ../../src/communication/common/context_manager.h \
@@ -61,11 +61,10 @@ cfg_scanner.lo: cfg_scanner.c /usr/include/stdc-predef.h \
  ../../src/dim/enumeration.h ../../src/dim/numeric.h ../../src/dim/rtsa.h \
  ../../src/dim/pmstore.h ../../src/dim/peri_cfg_scanner.h \
  ../../src/dim/epi_cfg_scanner.h ../../src/api/api_definitions.h \
- ../../src/api/data_encoder.h ../../src/asn1/phd_types.h \
- ../../src/api/api_definitions.h ../../src/api/data_list.h \
- ../../src/api/text_encoder.h ../../src/util/bytelib.h \
- ../../src/manager_p.h ../../src/manager.h /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
+ ../../src/api/data_encoder.h ../../src/api/api_definitions.h \
+ ../../src/api/data_list.h ../../src/api/text_encoder.h \
+ ../../src/util/bytelib.h ../../src/manager_p.h ../../src/manager.h \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h
@@ -188,9 +187,9 @@ cfg_scanner.h:
 
 ../../src/communication/common/service.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -249,8 +248,6 @@ mds.h:
 ../../src/api/api_definitions.h:
 
 ../../src/api/data_encoder.h:
-
-../../src/asn1/phd_types.h:
 
 ../../src/api/api_definitions.h:
 

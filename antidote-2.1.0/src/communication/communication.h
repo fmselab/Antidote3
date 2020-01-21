@@ -30,7 +30,7 @@
 #ifndef COMMUNICATION_H_
 #define COMMUNICATION_H_
 
-#include <communication/fsm.h>
+#include <communication/common/fsm.h>
 #include <communication/plugin/plugin.h>
 #include <communication/common/context_manager.h>
 

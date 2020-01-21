@@ -53,8 +53,7 @@ mds.lo: mds.c /usr/include/stdc-predef.h /usr/include/stdlib.h \
  ../../src/dim/numeric.h ../../src/dim/rtsa.h ../../src/dim/pmstore.h \
  ../../src/dim/nomenclature.h ../../src/dim/pmsegment.h \
  ../../src/util/bytelib.h ../../src/communication/common/service.h \
- ../../src/communication/fsm.h \
- ../../src/communication/../asn1/phd_types.h \
+ ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  ../../src/communication/communication.h \
  ../../src/communication/plugin/plugin.h \
  ../../src/communication/common/context_manager.h \
@@ -69,8 +68,10 @@ mds.lo: mds.c /usr/include/stdc-predef.h /usr/include/stdlib.h \
  ../../src/communication/parser/encoder_ASN1.h \
  ../../src/communication/common/service.h \
  ../../src/communication/manager/manager_operating.h \
- ../../src/asn1/phd_types.h ../../src/communication/fsm.h \
+ ../../src/communication/manager/manager_fsm.h \
+ ../../src/communication/common/fsm.h \
  ../../src/communication/agent/agent_operating.h \
+ ../../src/communication/agent/agent_fsm.h \
  ../../src/communication/common/stdconfigurations.h ../../src/dim/mds.h \
  ../../src/communication/common/extconfigurations.h \
  ../../src/api/data_encoder.h ../../src/api/api_definitions.h \
@@ -224,9 +225,9 @@ mds.h:
 
 ../../src/communication/common/service.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
-../../src/communication/../asn1/phd_types.h:
+../../src/asn1/phd_types.h:
 
 ../../src/communication/communication.h:
 
@@ -276,11 +277,13 @@ nomenclature.h:
 
 ../../src/communication/manager/manager_operating.h:
 
-../../src/asn1/phd_types.h:
+../../src/communication/manager/manager_fsm.h:
 
-../../src/communication/fsm.h:
+../../src/communication/common/fsm.h:
 
 ../../src/communication/agent/agent_operating.h:
+
+../../src/communication/agent/agent_fsm.h:
 
 ../../src/communication/common/stdconfigurations.h:
 
