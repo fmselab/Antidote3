@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: Antidote: IEEE 11073 Protocol Library
+Description: Antidote: IEEE 11073 Protocol Library.
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lantidote
+Cflags: -I${includedir}/@PACKAGE@

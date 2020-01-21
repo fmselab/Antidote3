@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/buildcore.mk
+include /usr/share/cdbs/1/rules/autoreconf.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS := --enable-tests=no
+
+DEB_DESTDIR := $(CURDIR)/debian/tmp
+
+build:
+	./create_doc.sh
+
+install/antidote-dev-doc::
+	mkdir -p $(DEB_DESTDIR)/usr/share/doc/antidote-dev-doc/html/
+	cp -a $(CURDIR)/doc/html/* $(DEB_DESTDIR)/usr/share/doc/antidote-dev-doc/html/
+
+clean::
+	-rm -f $(CURDIR)/doc/html/*
+

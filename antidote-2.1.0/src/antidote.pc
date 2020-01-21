@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Antidote: IEEE 11073 Protocol Library
+Description: Antidote: IEEE 11073 Protocol Library.
+Version: 2.1
+Libs: -L${libdir} -lantidote
+Cflags: -I${includedir}/antidote

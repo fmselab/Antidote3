@@ -1,0 +1,23 @@
+antidote (2.1-1) unstable; urgency=low
+
+  * Bumped version
+
+ -- Elvis Pfutzenreuter <epx@signove.com>  Tue, 17 Apr 2012 21:55:00 -0300
+
+antidote (2.0-1) unstable; urgency=low
+
+  * Bumped version
+
+ -- Elvis Pfutzenreuter <epx@signove.com>  Mon, 15 Feb 2012 12:44:00 -0300
+
+antidote (1.0-2) unstable; urgency=low
+
+  * Added devel-doc package
+
+ -- Elvis Pfutzenreuter <epx@signove.com>  Mon, 20 Dec 2010 13:20:00 -0300
+
+antidote (1.0-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Adrian Lívio Vasconcelos Guedes <adrian.guedes@signove.com>  Fri, 03 Dec 2010 16:33:58 -0300
