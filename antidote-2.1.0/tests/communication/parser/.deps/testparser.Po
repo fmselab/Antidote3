@@ -72,7 +72,7 @@ testparser.o: testparser.c /usr/include/stdc-predef.h \
  ../../../tests/functional_test_cases/test_functional.h \
  ../../../src/communication/common/service.h \
  ../../../src/communication/common/fsm.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/plugin/plugin.h ../../../src/util/bytelib.h \
  ../../../src/communication/common/context_manager.h \
  ../../../src/communication/common/context.h ../../../src/dim/mds.h \
@@ -260,7 +260,7 @@ testparser.o: testparser.c /usr/include/stdc-predef.h \
 
 ../../../src/communication/common/fsm.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/plugin/plugin.h:
 

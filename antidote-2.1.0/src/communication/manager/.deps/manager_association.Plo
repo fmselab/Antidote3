@@ -64,7 +64,7 @@ manager_association.lo: manager_association.c /usr/include/stdc-predef.h \
  ../../../src/asn1/phd_types.h \
  ../../../src/communication/common/service.h \
  ../../../src/communication/common/fsm.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/common/context_manager.h \
  ../../../src/communication/common/stdconfigurations.h \
  ../../../src/dim/mds.h ../../../src/dim/dim.h \
@@ -75,7 +75,7 @@ manager_association.lo: manager_association.c /usr/include/stdc-predef.h \
  ../../../src/dim/scanner.h ../../../src/dim/peri_cfg_scanner.h \
  ../../../src/dim/cfg_scanner.h ../../../src/dim/epi_cfg_scanner.h \
  ../../../src/communication/common/extconfigurations.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/parser/decoder_ASN1.h \
  ../../../src/util/bytelib.h \
  ../../../src/communication/parser/encoder_ASN1.h \
@@ -235,7 +235,7 @@ manager_association.h:
 
 ../../../src/communication/common/fsm.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/common/context_manager.h:
 
@@ -271,7 +271,7 @@ manager_association.h:
 
 ../../../src/communication/common/extconfigurations.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/parser/decoder_ASN1.h:
 

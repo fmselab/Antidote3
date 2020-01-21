@@ -45,7 +45,7 @@ pkgconfig_DATA = antidote.pc
 					communication/common/fsm.h \
 					communication/agent/agent_fsm.h \
 					communication/manager/manager_fsm.h \
-					communication/communication.h
+					communication/common/communication.h
 @PACKAGE@_include_dimdir = $(pkgincludedir)/dim
 @PACKAGE@_include_dim_HEADERS = dim/mds.h \
 				dim/numeric.h \

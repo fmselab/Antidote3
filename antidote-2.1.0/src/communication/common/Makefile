@@ -105,7 +105,8 @@ CONFIG_CLEAN_VPATH_FILES =
 LTLIBRARIES = $(noinst_LTLIBRARIES)
 libcommon_la_LIBADD =
 am_libcommon_la_OBJECTS = stdconfigurations.lo context_manager.lo \
-	extconfigurations.lo service.lo fsm.lo disassociating.lo
+	extconfigurations.lo service.lo fsm.lo disassociating.lo \
+	communication.lo
 libcommon_la_OBJECTS = $(am_libcommon_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
@@ -310,14 +311,16 @@ libcommon_la_SOURCES = stdconfigurations.c \
 			extconfigurations.c \
 			service.c \
 			fsm.c \
-			disassociating.c
+			disassociating.c \
+			communication.c
 
 noinst_HEADERS = stdconfigurations.h \
 			context_manager.h \
 			extconfigurations.h \
 			service.h \
 			fsm.h \
-			disassociating.h
+			disassociating.h \
+			communication.h
 
 all: all-am
 
@@ -373,6 +376,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
+include ./$(DEPDIR)/communication.Plo
 include ./$(DEPDIR)/context_manager.Plo
 include ./$(DEPDIR)/disassociating.Plo
 include ./$(DEPDIR)/extconfigurations.Plo

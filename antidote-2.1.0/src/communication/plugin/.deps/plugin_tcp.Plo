@@ -1,5 +1,6 @@
 plugin_tcp.lo: plugin_tcp.c /usr/include/stdc-predef.h \
- ../../../src/util/strbuff.h ../../../src/communication/communication.h \
+ ../../../src/util/strbuff.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/common/fsm.h ../../../src/asn1/phd_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -83,7 +84,7 @@ plugin_tcp.lo: plugin_tcp.c /usr/include/stdc-predef.h \
 
 ../../../src/util/strbuff.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/common/fsm.h:
 

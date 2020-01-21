@@ -13,7 +13,7 @@ testservice.o: testservice.c /usr/include/stdc-predef.h testservice.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
- ../../src/communication/communication.h \
+ ../../src/communication/common/communication.h \
  ../../src/communication/plugin/plugin.h ../../src/util/bytelib.h \
  ../../src/communication/common/context_manager.h \
  ../../src/communication/common/context.h /usr/include/CUnit/Basic.h \
@@ -60,7 +60,7 @@ testservice.o: testservice.c /usr/include/stdc-predef.h testservice.h \
  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  ../../src/api/api_definitions.h ../../src/communication/common/service.h \
- ../../src/communication/communication.h \
+ ../../src/communication/common/communication.h \
  ../../src/communication/parser/encoder_ASN1.h ../../src/util/bytelib.h \
  ../../src/communication/common/context_manager.h \
  ../../src/communication/parser/struct_cleaner.h \
@@ -129,7 +129,7 @@ testservice.h:
 
 ../../src/asn1/phd_types.h:
 
-../../src/communication/communication.h:
+../../src/communication/common/communication.h:
 
 ../../src/communication/plugin/plugin.h:
 
@@ -247,7 +247,7 @@ testservice.h:
 
 ../../src/communication/common/service.h:
 
-../../src/communication/communication.h:
+../../src/communication/common/communication.h:
 
 ../../src/communication/parser/encoder_ASN1.h:
 

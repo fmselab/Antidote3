@@ -45,23 +45,23 @@ agent_association.lo: agent_association.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/string.h /usr/include/strings.h agent_association.h \
- ../../../src/asn1/phd_types.h \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- ../../../src/communication/agent/agent_fsm.h \
- ../../../src/communication/common/fsm.h \
- ../../../src/communication/common/context.h ../../../src/agent_p.h \
+ /usr/include/string.h /usr/include/strings.h ../../../src/agent_p.h \
  ../../../src/agent.h ../../../src/api/api_definitions.h \
  ../../../src/communication/common/context.h \
  ../../../src/communication/plugin/plugin.h ../../../src/util/bytelib.h \
  ../../../src/asn1/phd_types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../../../src/communication/common/service.h \
- ../../../src/communication/common/fsm.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/fsm.h ../../../src/asn1/phd_types.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/common/context_manager.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/agent/agent_association.h \
+ ../../../src/communication/agent/agent_fsm.h \
+ ../../../src/communication/common/fsm.h \
+ ../../../src/communication/common/context.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/parser/decoder_ASN1.h \
  ../../../src/util/bytelib.h \
  ../../../src/communication/parser/encoder_ASN1.h \
@@ -182,24 +182,6 @@ agent_association.lo: agent_association.c /usr/include/stdc-predef.h \
 
 /usr/include/strings.h:
 
-agent_association.h:
-
-../../../src/asn1/phd_types.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h:
-
-/usr/include/stdint.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-../../../src/communication/agent/agent_fsm.h:
-
-../../../src/communication/common/fsm.h:
-
-../../../src/communication/common/context.h:
-
 ../../../src/agent_p.h:
 
 ../../../src/agent.h:
@@ -214,15 +196,33 @@ agent_association.h:
 
 ../../../src/asn1/phd_types.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
 ../../../src/communication/common/service.h:
 
 ../../../src/communication/common/fsm.h:
 
-../../../src/communication/communication.h:
+../../../src/asn1/phd_types.h:
+
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/common/context_manager.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/agent/agent_association.h:
+
+../../../src/communication/agent/agent_fsm.h:
+
+../../../src/communication/common/fsm.h:
+
+../../../src/communication/common/context.h:
+
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/parser/decoder_ASN1.h:
 

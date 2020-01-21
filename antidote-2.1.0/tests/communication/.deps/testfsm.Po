@@ -43,7 +43,7 @@ testfsm.o: testfsm.c /usr/include/stdc-predef.h testfsm.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
- ../../src/communication/communication.h \
+ ../../src/communication/common/communication.h \
  ../../src/communication/common/fsm.h \
  ../../src/communication/plugin/plugin.h ../../src/util/bytelib.h \
  ../../src/asn1/phd_types.h \
@@ -165,7 +165,7 @@ testfsm.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
 
-../../src/communication/communication.h:
+../../src/communication/common/communication.h:
 
 ../../src/communication/common/fsm.h:
 

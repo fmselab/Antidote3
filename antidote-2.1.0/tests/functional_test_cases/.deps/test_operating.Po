@@ -14,7 +14,7 @@ test_operating.o: test_operating.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
- ../../src/communication/communication.h \
+ ../../src/communication/common/communication.h \
  ../../src/communication/plugin/plugin.h ../../src/util/bytelib.h \
  ../../src/communication/common/context_manager.h \
  ../../src/communication/common/context.h ../../src/dim/mds.h \
@@ -59,9 +59,10 @@ test_operating.o: test_operating.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  ../../src/communication/common/fsm.h \
- ../../src/communication/communication.h /usr/include/CUnit/Basic.h \
- /usr/include/CUnit/CUnit.h /usr/include/string.h /usr/include/strings.h \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ ../../src/communication/common/communication.h \
+ /usr/include/CUnit/Basic.h /usr/include/CUnit/CUnit.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
@@ -126,7 +127,7 @@ test_functional.h:
 
 ../../src/asn1/phd_types.h:
 
-../../src/communication/communication.h:
+../../src/communication/common/communication.h:
 
 ../../src/communication/plugin/plugin.h:
 
@@ -246,7 +247,7 @@ test_functional.h:
 
 ../../src/communication/common/fsm.h:
 
-../../src/communication/communication.h:
+../../src/communication/common/communication.h:
 
 /usr/include/CUnit/Basic.h:
 

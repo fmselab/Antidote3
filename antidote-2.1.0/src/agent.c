@@ -49,7 +49,7 @@
 #include "src/agent_p.h"
 #include "src/api/data_encoder.h"
 #include "src/communication/plugin/plugin.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/agent/agent_configuring.h"
 #include "src/communication/common/stdconfigurations.h"
 #include "src/specializations/blood_pressure_monitor.h"

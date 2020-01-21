@@ -2,7 +2,7 @@
 #include <src/util/linkedlist.h>
 #include <src/util/log.h>
 #include <src/communication/common/context_manager.h>
-#include <src/communication/communication.h>
+#include <src/communication/common/communication.h>
 #include <src/communication/parser/struct_cleaner.h>
 #include <src/communication/manager/manager_configuring.h>
 #include <src/communication/agent/agent_configuring.h>

@@ -36,7 +36,7 @@
 
 #include "src/communication/plugin/plugin_pthread.h"
 #include "src/util/log.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/common/context_manager.h"
 #include <pthread.h>
 #include <stdlib.h>

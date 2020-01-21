@@ -56,7 +56,7 @@ agent_configuring.lo: agent_configuring.c /usr/include/stdc-predef.h \
  ../../../src/dim/nomenclature.h ../../../src/dim/pmsegment.h \
  ../../../src/util/bytelib.h ../../../src/communication/common/service.h \
  ../../../src/communication/common/fsm.h ../../../src/asn1/phd_types.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/plugin/plugin.h \
  ../../../src/communication/common/context_manager.h \
  ../../../src/communication/common/context.h ../../../src/dim/scanner.h \
@@ -64,7 +64,7 @@ agent_configuring.lo: agent_configuring.c /usr/include/stdc-predef.h \
  ../../../src/dim/epi_cfg_scanner.h ../../../src/agent_p.h \
  ../../../src/agent.h ../../../src/communication/common/service.h \
  ../../../src/dim/nomenclature.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/agent/agent_configuring.h \
  ../../../src/communication/agent/agent_association.h \
  ../../../src/communication/agent/agent_fsm.h \
@@ -223,7 +223,7 @@ agent_configuring.lo: agent_configuring.c /usr/include/stdc-predef.h \
 
 ../../../src/asn1/phd_types.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/plugin/plugin.h:
 
@@ -247,7 +247,7 @@ agent_configuring.lo: agent_configuring.c /usr/include/stdc-predef.h \
 
 ../../../src/dim/nomenclature.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/agent/agent_configuring.h:
 

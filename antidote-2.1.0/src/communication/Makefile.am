@@ -4,6 +4,6 @@ INCLUDES =  -I$(top_builddir) -I$(top_srcdir) -I$(top_builddir)/src -I$(top_srcd
 
 noinst_LTLIBRARIES = libcom.la
 
-libcom_la_SOURCES = communication.c
+libcom_la_SOURCES = 
 
-noinst_HEADERS = communication.h 
+noinst_HEADERS = 

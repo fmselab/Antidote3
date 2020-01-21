@@ -65,9 +65,9 @@ main_test_console.o: main_test_console.c /usr/include/stdc-predef.h \
  /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../src/communication/common/service.h ../src/communication/common/fsm.h \
- ../src/asn1/phd_types.h ../src/communication/communication.h \
+ ../src/asn1/phd_types.h ../src/communication/common/communication.h \
  ../src/communication/common/context_manager.h \
- ../src/communication/communication.h \
+ ../src/communication/common/communication.h \
  ../src/communication/common/context_manager.h \
  ../src/api/api_definitions.h ../src/api/data_encoder.h \
  ../src/api/api_definitions.h ../src/api/data_list.h \
@@ -243,11 +243,11 @@ main_test_console.o: main_test_console.c /usr/include/stdc-predef.h \
 
 ../src/asn1/phd_types.h:
 
-../src/communication/communication.h:
+../src/communication/common/communication.h:
 
 ../src/communication/common/context_manager.h:
 
-../src/communication/communication.h:
+../src/communication/common/communication.h:
 
 ../src/communication/common/context_manager.h:
 

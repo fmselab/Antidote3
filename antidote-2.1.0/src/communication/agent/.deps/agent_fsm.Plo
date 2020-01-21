@@ -52,7 +52,7 @@ agent_fsm.lo: agent_fsm.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../../../src/communication/common/fsm.h \
  ../../../src/communication/common/disassociating.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/common/fsm.h \
  ../../../src/communication/plugin/plugin.h ../../../src/util/bytelib.h \
  ../../../src/asn1/phd_types.h \
@@ -64,7 +64,7 @@ agent_fsm.lo: agent_fsm.c /usr/include/stdc-predef.h \
  ../../../src/communication/agent/agent_configuring.h \
  ../../../src/communication/agent/agent_operating.h \
  ../../../src/communication/common/service.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/agent/agent_ops.h \
  ../../../src/communication/agent/agent_fsm.h ../../../src/util/log.h
 
@@ -186,7 +186,7 @@ agent_fsm.lo: agent_fsm.c /usr/include/stdc-predef.h \
 
 ../../../src/communication/common/disassociating.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/common/fsm.h:
 
@@ -212,7 +212,7 @@ agent_fsm.lo: agent_fsm.c /usr/include/stdc-predef.h \
 
 ../../../src/communication/common/service.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/agent/agent_ops.h:
 

@@ -31,7 +31,7 @@
 #include "test_association.h"
 #include "test_functional.h"
 #include "src/manager_p.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/common/fsm.h"
 
 #include <Basic.h>

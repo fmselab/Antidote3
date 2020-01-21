@@ -21,7 +21,7 @@ trans.lo: trans.c /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  ../../src/communication/common/context_manager.h \
  ../../src/communication/common/context.h \
- ../../src/communication/communication.h \
+ ../../src/communication/common/communication.h \
  ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
@@ -64,7 +64,7 @@ trans.lo: trans.c /usr/include/stdc-predef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  ../../src/communication/common/service.h \
- ../../src/communication/communication.h ../../src/dim/scanner.h \
+ ../../src/communication/common/communication.h ../../src/dim/scanner.h \
  ../../src/dim/peri_cfg_scanner.h ../../src/dim/cfg_scanner.h \
  ../../src/dim/epi_cfg_scanner.h trans.h \
  ../../src/communication/common/context.h \
@@ -130,7 +130,7 @@ trans.lo: trans.c /usr/include/stdc-predef.h /usr/include/string.h \
 
 ../../src/communication/common/context.h:
 
-../../src/communication/communication.h:
+../../src/communication/common/communication.h:
 
 ../../src/communication/common/fsm.h:
 
@@ -242,7 +242,7 @@ trans.lo: trans.c /usr/include/stdc-predef.h /usr/include/string.h \
 
 ../../src/communication/common/service.h:
 
-../../src/communication/communication.h:
+../../src/communication/common/communication.h:
 
 ../../src/dim/scanner.h:
 

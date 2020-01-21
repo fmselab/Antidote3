@@ -37,7 +37,7 @@
 #define CONFIGURING_MANAGER_H_
 
 #include "src/asn1/phd_types.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 
 void configuring_checking_state_process_apdu(Context *ctx, APDU *apdu);
 

@@ -40,7 +40,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "src/communication/common/service.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/agent/agent_operating.h"
 #include "src/communication/agent/agent_disassociating.h"
 #include "src/communication/parser/struct_cleaner.h"
@@ -54,7 +54,6 @@
 #include "src/dim/nomenclature.h"
 #include "src/util/ioutil.h"
 #include "src/util/log.h"
-#include "src/communication/communication.h"
 
 static void communication_agent_process_roiv(Context *ctx, APDU *apdu);
 

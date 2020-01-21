@@ -37,7 +37,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "src/communication/agent/agent_disassociating.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/parser/decoder_ASN1.h"
 #include "src/communication/parser/encoder_ASN1.h"
 #include "src/util/bytelib.h"
@@ -95,6 +95,25 @@ void disassociating_process_apdu_agent(Context *ctx, APDU *apdu)
 		break;
 	}
 #endif
+}
+
+/**
+ *  Listen to fsm event and send Release Response APDU
+ *
+ * @param ctx context
+ * @param evt input event
+ * @param dummy Dummy event data
+ */
+void disassociating_release_response_tx_normal(Context *ctx, fsm_events evt,
+					FSMEventData *dummy)
+{
+	FSMEventData data;
+	data.choice = FSM_EVT_DATA_RELEASE_RESPONSE_REASON;
+	data.u.release_response_reason = RELEASE_RESPONSE_REASON_NORMAL;
+
+	DEBUG("releasing association response normal tx(normal)");
+
+	disassociating_release_response_tx(ctx, evt, &data);
 }
 
 /** @} */

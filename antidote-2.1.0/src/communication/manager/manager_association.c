@@ -42,7 +42,7 @@
 #include "src/manager_p.h"
 #include "src/communication/common/stdconfigurations.h"
 #include "src/communication/common/extconfigurations.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/parser/decoder_ASN1.h"
 #include "src/communication/parser/encoder_ASN1.h"
 #include "src/util/bytelib.h"

@@ -51,7 +51,7 @@ testextconfiguration.o: testextconfiguration.c /usr/include/stdc-predef.h \
  ../../src/dim/nomenclature.h ../../src/dim/pmsegment.h \
  ../../src/util/bytelib.h ../../src/communication/common/service.h \
  ../../src/communication/common/fsm.h ../../src/asn1/phd_types.h \
- ../../src/communication/communication.h \
+ ../../src/communication/common/communication.h \
  ../../src/communication/plugin/plugin.h \
  ../../src/communication/common/context_manager.h \
  ../../src/communication/common/context.h ../../src/dim/scanner.h \
@@ -223,7 +223,7 @@ testextconfiguration.o: testextconfiguration.c /usr/include/stdc-predef.h \
 
 ../../src/asn1/phd_types.h:
 
-../../src/communication/communication.h:
+../../src/communication/common/communication.h:
 
 ../../src/communication/plugin/plugin.h:
 

@@ -30,7 +30,7 @@
 #include "testfsm.h"
 #include "Basic.h"
 #include <stdio.h>
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/common/context_manager.h"
 #include "src/communication/common/fsm.h"
 

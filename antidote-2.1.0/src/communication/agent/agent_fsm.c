@@ -44,7 +44,7 @@
 #include "src/communication/common/fsm.h"
 #include "src/communication/common/disassociating.h"
 #include "src/communication/agent/agent_association.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/agent/agent_disassociating.h"
 #include "src/communication/agent/agent_configuring.h"
 #include "src/communication/agent/agent_operating.h"

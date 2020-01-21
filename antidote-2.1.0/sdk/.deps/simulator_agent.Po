@@ -96,7 +96,7 @@ simulator_agent.o: simulator_agent.c /usr/include/stdc-predef.h \
  ../src/communication/common/context.h \
  ../src/communication/plugin/plugin.h ../src/util/bytelib.h \
  ../src/communication/common/service.h ../src/communication/common/fsm.h \
- ../src/asn1/phd_types.h ../src/communication/communication.h \
+ ../src/asn1/phd_types.h ../src/communication/common/communication.h \
  ../src/communication/common/context_manager.h \
  ../src/communication/plugin/plugin_tcp_agent.h \
  ../src/specializations/pulse_oximeter.h \
@@ -347,7 +347,7 @@ simulator_agent.o: simulator_agent.c /usr/include/stdc-predef.h \
 
 ../src/asn1/phd_types.h:
 
-../src/communication/communication.h:
+../src/communication/common/communication.h:
 
 ../src/communication/common/context_manager.h:
 

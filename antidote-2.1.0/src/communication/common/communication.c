@@ -40,10 +40,10 @@
 #include "src/agent_p.h"
 #include "src/trans/trans.h"
 #include "src/communication/common/context_manager.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 
-#include "agent/agent_association.h"
-#include "manager/manager_association.h"
+#include "src/communication/agent/agent_association.h"
+#include "src/communication/manager/manager_association.h"
 #include "src/communication/common/communication_p.h"
 #include "src/communication/manager/manager_operating.h"
 #include "src/communication/agent/agent_operating.h"

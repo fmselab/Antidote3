@@ -103,7 +103,7 @@ main_test_suite.o: main_test_suite.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  communication/testservice.h ../src/communication/common/service.h \
  ../src/asn1/phd_types.h ../src/communication/common/fsm.h \
- ../src/communication/communication.h \
+ ../src/communication/common/communication.h \
  ../src/communication/plugin/plugin.h ../src/util/bytelib.h \
  ../src/communication/common/context_manager.h \
  communication/testextconfiguration.h dim/testpmstore.h \
@@ -116,7 +116,7 @@ main_test_suite.o: main_test_suite.c /usr/include/stdc-predef.h \
  functional_test_cases/test_pericfgscanner.h ../src/api/api_definitions.h \
  ../src/api/data_encoder.h ../src/api/api_definitions.h \
  ../src/api/data_list.h ../src/api/xml_encoder.h \
- ../src/api/api_definitions.h ../src/communication/communication.h \
+ ../src/api/api_definitions.h ../src/communication/common/communication.h \
  ../src/manager_p.h ../src/manager.h \
  ../src/communication/common/service.h ../src/util/strbuff.h \
  ../src/util/ioutil.h
@@ -383,7 +383,7 @@ communication/testservice.h:
 
 ../src/communication/common/fsm.h:
 
-../src/communication/communication.h:
+../src/communication/common/communication.h:
 
 ../src/communication/plugin/plugin.h:
 
@@ -429,7 +429,7 @@ functional_test_cases/test_pericfgscanner.h:
 
 ../src/api/api_definitions.h:
 
-../src/communication/communication.h:
+../src/communication/common/communication.h:
 
 ../src/manager_p.h:
 

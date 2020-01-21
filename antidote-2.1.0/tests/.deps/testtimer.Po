@@ -57,7 +57,7 @@ testtimer.o: testtimer.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../src/communication/common/service.h ../src/communication/common/fsm.h \
- ../src/asn1/phd_types.h ../src/communication/communication.h \
+ ../src/asn1/phd_types.h ../src/communication/common/communication.h \
  ../src/communication/common/context_manager.h testtimer.h \
  functional_test_cases/test_functional.h \
  ../src/communication/common/service.h ../src/dim/mds.h ../src/dim/dim.h \
@@ -82,7 +82,7 @@ testtimer.o: testtimer.c /usr/include/stdc-predef.h \
  /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  ../src/dim/scanner.h ../src/dim/peri_cfg_scanner.h \
  ../src/dim/cfg_scanner.h ../src/dim/epi_cfg_scanner.h \
- ../src/communication/communication.h ../src/util/log.h
+ ../src/communication/common/communication.h ../src/util/log.h
 
 /usr/include/stdc-predef.h:
 
@@ -234,7 +234,7 @@ testtimer.o: testtimer.c /usr/include/stdc-predef.h \
 
 ../src/asn1/phd_types.h:
 
-../src/communication/communication.h:
+../src/communication/common/communication.h:
 
 ../src/communication/common/context_manager.h:
 
@@ -310,6 +310,6 @@ functional_test_cases/test_functional.h:
 
 ../src/dim/epi_cfg_scanner.h:
 
-../src/communication/communication.h:
+../src/communication/common/communication.h:
 
 ../src/util/log.h:

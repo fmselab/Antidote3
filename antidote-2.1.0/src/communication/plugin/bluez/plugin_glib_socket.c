@@ -39,7 +39,7 @@
 #include <string.h>
 
 #include "src/util/strbuff.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "plugin_glib_socket.h"
 #include "src/util/log.h"
 #include "src/util/linkedlist.h"

@@ -63,7 +63,7 @@
 #include "src/api/data_encoder.h"
 #include "src/api/xml_encoder.h"
 #include "src/asn1/phd_types.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/common/service.h"
 #include "src/manager_p.h"
 #include "src/util/strbuff.h"

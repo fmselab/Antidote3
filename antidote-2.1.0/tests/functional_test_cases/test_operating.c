@@ -32,7 +32,7 @@
 #include "test_functional.h"
 #include "src/manager_p.h"
 #include "src/communication/common/fsm.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 
 #include <Basic.h>
 #include <stdio.h>

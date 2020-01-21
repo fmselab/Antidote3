@@ -52,7 +52,7 @@ manager_fsm.lo: manager_fsm.c /usr/include/stdc-predef.h \
  ../../../src/communication/manager/manager_fsm.h \
  ../../../src/communication/manager/manager_association.h \
  ../../../src/communication/common/context.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/common/fsm.h \
  ../../../src/communication/plugin/plugin.h ../../../src/util/bytelib.h \
  ../../../src/asn1/phd_types.h \
@@ -62,7 +62,8 @@ manager_fsm.lo: manager_fsm.c /usr/include/stdc-predef.h \
  ../../../src/communication/manager/manager_configuring.h \
  ../../../src/communication/manager/manager_operating.h \
  ../../../src/communication/common/service.h \
- ../../../src/communication/communication.h ../../../src/util/log.h
+ ../../../src/communication/common/communication.h \
+ ../../../src/util/log.h
 
 /usr/include/stdc-predef.h:
 
@@ -184,7 +185,7 @@ manager_fsm.lo: manager_fsm.c /usr/include/stdc-predef.h \
 
 ../../../src/communication/common/context.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/common/fsm.h:
 
@@ -206,6 +207,6 @@ manager_fsm.lo: manager_fsm.c /usr/include/stdc-predef.h \
 
 ../../../src/communication/common/service.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/util/log.h:

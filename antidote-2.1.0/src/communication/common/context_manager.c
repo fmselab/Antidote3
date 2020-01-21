@@ -40,7 +40,7 @@
  * @{
  */
 
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/common/communication_p.h"
 #include "src/dim/mds.h"
 #include "context_manager.h"

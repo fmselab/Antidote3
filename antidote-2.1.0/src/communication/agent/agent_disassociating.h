@@ -37,9 +37,12 @@
 #define DISASSOCIATING_AGENT_H_
 
 #include "src/asn1/phd_types.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 
 void disassociating_process_apdu_agent(Context *ctx, APDU *apdu);
+
+void disassociating_release_response_tx_normal(Context *ctx, fsm_events evt,
+					FSMEventData *data);
 
 /** @} */
 

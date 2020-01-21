@@ -48,7 +48,7 @@
 
 #include <asn1/phd_types.h>
 #include <communication/common/fsm.h>
-#include <communication/communication.h>
+#include <communication/common/communication.h>
 
 /**
  * Service states

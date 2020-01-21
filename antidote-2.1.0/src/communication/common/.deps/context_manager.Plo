@@ -1,5 +1,5 @@
 context_manager.lo: context_manager.c /usr/include/stdc-predef.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/common/fsm.h ../../../src/asn1/phd_types.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -53,10 +53,10 @@ context_manager.lo: context_manager.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  ../../../src/communication/common/service.h \
- ../../../src/communication/communication.h ../../../src/dim/scanner.h \
- ../../../src/dim/peri_cfg_scanner.h ../../../src/dim/cfg_scanner.h \
- ../../../src/dim/epi_cfg_scanner.h context_manager.h \
- ../../../src/util/log.h /usr/include/stdio.h \
+ ../../../src/communication/common/communication.h \
+ ../../../src/dim/scanner.h ../../../src/dim/peri_cfg_scanner.h \
+ ../../../src/dim/cfg_scanner.h ../../../src/dim/epi_cfg_scanner.h \
+ context_manager.h ../../../src/util/log.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/libio.h \
@@ -69,7 +69,7 @@ context_manager.lo: context_manager.c /usr/include/stdc-predef.h \
 
 /usr/include/stdc-predef.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/common/fsm.h:
 
@@ -201,7 +201,7 @@ context_manager.lo: context_manager.c /usr/include/stdc-predef.h \
 
 ../../../src/communication/common/service.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/dim/scanner.h:
 

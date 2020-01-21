@@ -7,11 +7,13 @@ libcommon_la_SOURCES = stdconfigurations.c \
 			extconfigurations.c \
 			service.c \
 			fsm.c \
-			disassociating.c
+			disassociating.c \
+			communication.c
 
 noinst_HEADERS = stdconfigurations.h \
 			context_manager.h \
 			extconfigurations.h \
 			service.h \
 			fsm.h \
-			disassociating.h
+			disassociating.h \
+			communication.h

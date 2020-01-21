@@ -41,7 +41,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include "src/communication/plugin/plugin.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/trans/trans.h"
 #include "src/util/log.h"
 

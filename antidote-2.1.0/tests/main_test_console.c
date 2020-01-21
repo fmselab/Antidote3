@@ -39,7 +39,7 @@
 // #include <dbus/dbus.h>
 #include <pthread.h>
 #include "src/manager_p.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/common/context_manager.h"
 #include "src/api/api_definitions.h"
 #include "src/api/data_encoder.h"

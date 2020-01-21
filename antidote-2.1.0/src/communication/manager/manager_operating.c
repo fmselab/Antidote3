@@ -41,7 +41,7 @@
 #include <string.h>
 #include "src/manager_p.h"
 #include "src/communication/common/service.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/manager/manager_operating.h"
 #include "src/communication/manager/manager_disassociating.h"
 #include "src/communication/parser/struct_cleaner.h"
@@ -55,7 +55,7 @@
 #include "src/dim/nomenclature.h"
 #include "src/util/ioutil.h"
 #include "src/util/log.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 
 static void communication_process_roiv(Context *ctx, APDU *apdu);
 

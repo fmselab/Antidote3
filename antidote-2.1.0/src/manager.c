@@ -90,7 +90,7 @@
 #include "src/manager_p.h"
 #include "src/api/data_encoder.h"
 #include "src/communication/plugin/plugin.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/common/context_manager.h"
 #include "src/communication/common/extconfigurations.h"
 #include "src/communication/manager/manager_configuring.h"

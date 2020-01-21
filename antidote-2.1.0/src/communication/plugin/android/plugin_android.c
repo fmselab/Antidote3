@@ -36,7 +36,7 @@
 #include <string.h>
 #include <jni.h>
 #include "src/communication/plugin/plugin.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/util/log.h"
 #include "plugin_android.h"
 

@@ -39,7 +39,7 @@
 #include "src/dim/mds.h"
 #include "src/agent_p.h"
 #include "src/dim/nomenclature.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/agent/agent_configuring.h"
 #include "src/communication/agent/agent_association.h"
 #include "src/communication/common/service.h"

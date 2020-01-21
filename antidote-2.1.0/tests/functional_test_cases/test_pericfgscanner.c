@@ -33,7 +33,7 @@
 #include "src/manager_p.h"
 #include "src/communication/parser/decoder_ASN1.h"
 #include "src/util/bytelib.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/dim/mds.h"
 
 #include <Basic.h>

@@ -74,7 +74,7 @@ testdim.o: testdim.c /usr/include/stdc-predef.h \
  /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  ../../src/util/bytelib.h ../../src/communication/common/service.h \
  ../../src/communication/common/fsm.h \
- ../../src/communication/communication.h \
+ ../../src/communication/common/communication.h \
  ../../src/communication/plugin/plugin.h \
  ../../src/communication/common/context_manager.h \
  ../../src/communication/common/context.h ../../src/dim/scanner.h \
@@ -277,7 +277,7 @@ testdim.o: testdim.c /usr/include/stdc-predef.h \
 
 ../../src/communication/common/fsm.h:
 
-../../src/communication/communication.h:
+../../src/communication/common/communication.h:
 
 ../../src/communication/plugin/plugin.h:
 

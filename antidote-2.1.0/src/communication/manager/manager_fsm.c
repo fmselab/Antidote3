@@ -43,7 +43,7 @@
 #include "src/communication/common/fsm.h"
 #include "src/communication/manager/manager_fsm.h"
 #include "src/communication/manager/manager_association.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/manager/manager_disassociating.h"
 #include "src/communication/manager/manager_configuring.h"
 #include "src/communication/manager/manager_operating.h"

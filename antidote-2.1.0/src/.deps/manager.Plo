@@ -55,11 +55,11 @@ manager.lo: manager.c /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  communication/common/service.h communication/common/fsm.h \
- ../src/asn1/phd_types.h communication/communication.h \
+ ../src/asn1/phd_types.h communication/common/communication.h \
  communication/common/context_manager.h ../src/api/data_encoder.h \
  ../src/api/api_definitions.h ../src/api/data_list.h \
  ../src/communication/plugin/plugin.h \
- ../src/communication/communication.h \
+ ../src/communication/common/communication.h \
  ../src/communication/common/context_manager.h \
  ../src/communication/common/extconfigurations.h \
  ../src/communication/manager/manager_configuring.h \
@@ -218,7 +218,7 @@ communication/common/fsm.h:
 
 ../src/asn1/phd_types.h:
 
-communication/communication.h:
+communication/common/communication.h:
 
 communication/common/context_manager.h:
 
@@ -230,7 +230,7 @@ communication/common/context_manager.h:
 
 ../src/communication/plugin/plugin.h:
 
-../src/communication/communication.h:
+../src/communication/common/communication.h:
 
 ../src/communication/common/context_manager.h:
 

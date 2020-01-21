@@ -44,7 +44,7 @@
 #include "src/communication/parser/decoder_ASN1.h"
 #include "src/util/bytelib.h"
 #include "src/communication/parser/struct_cleaner.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/util/ioutil.h"
 #include "src/util/log.h"
 

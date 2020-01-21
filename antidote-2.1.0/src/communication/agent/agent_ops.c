@@ -31,7 +31,7 @@
 
 #include "communication/agent/agent_fsm.h"
 #include "communication/agent/agent_ops.h"
-#include "communication/communication.h"
+#include "communication/common/communication.h"
 #include "communication/common/service.h"
 #include "communication/common/stdconfigurations.h"
 #include "communication/parser/encoder_ASN1.h"

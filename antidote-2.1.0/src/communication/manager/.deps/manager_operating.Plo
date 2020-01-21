@@ -60,10 +60,10 @@ manager_operating.lo: manager_operating.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../../../src/communication/common/service.h \
  ../../../src/communication/common/fsm.h ../../../src/asn1/phd_types.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/common/context_manager.h \
  ../../../src/communication/common/service.h \
- ../../../src/communication/communication.h \
+ ../../../src/communication/common/communication.h \
  ../../../src/communication/manager/manager_operating.h \
  ../../../src/communication/manager/manager_fsm.h \
  ../../../src/communication/common/fsm.h \
@@ -228,13 +228,13 @@ manager_operating.lo: manager_operating.c /usr/include/stdc-predef.h \
 
 ../../../src/asn1/phd_types.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/common/context_manager.h:
 
 ../../../src/communication/common/service.h:
 
-../../../src/communication/communication.h:
+../../../src/communication/common/communication.h:
 
 ../../../src/communication/manager/manager_operating.h:
 

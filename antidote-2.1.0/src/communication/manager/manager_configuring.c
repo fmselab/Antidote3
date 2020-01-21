@@ -38,7 +38,7 @@
 #include <stdlib.h>
 #include "src/dim/mds.h"
 #include "src/dim/nomenclature.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/manager/manager_configuring.h"
 #include "src/communication/manager/manager_association.h"
 #include "src/communication/common/service.h"

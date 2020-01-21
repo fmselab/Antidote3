@@ -38,7 +38,7 @@
 
 #include <pthread.h>
 #include "src/communication/plugin/plugin.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 
 void plugin_pthread_setup(CommunicationPlugin *plugin);
 

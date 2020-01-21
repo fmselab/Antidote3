@@ -37,7 +37,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "src/communication/manager/manager_disassociating.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/parser/decoder_ASN1.h"
 #include "src/communication/parser/encoder_ASN1.h"
 #include "src/util/bytelib.h"

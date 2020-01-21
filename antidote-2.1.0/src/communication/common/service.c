@@ -38,7 +38,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "src/communication/common/service.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/parser/decoder_ASN1.h"
 #include "src/communication/parser/encoder_ASN1.h"
 #include "src/communication/parser/struct_cleaner.h"

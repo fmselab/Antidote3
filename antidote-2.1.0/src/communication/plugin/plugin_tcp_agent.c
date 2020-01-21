@@ -38,7 +38,7 @@
  */
 
 #include "src/util/strbuff.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/plugin/plugin_tcp_agent.h"
 #include "src/util/log.h"
 #include "src/util/ioutil.h"

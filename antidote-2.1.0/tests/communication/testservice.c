@@ -31,7 +31,7 @@
 #include "testservice.h"
 #include "Basic.h"
 #include "src/manager_p.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/communication/parser/encoder_ASN1.h"
 #include "src/communication/common/context_manager.h"
 #include "src/communication/parser/struct_cleaner.h"

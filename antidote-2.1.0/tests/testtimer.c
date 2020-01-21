@@ -32,7 +32,7 @@
 #include "src/manager_p.h"
 #include "testtimer.h"
 #include "functional_test_cases/test_functional.h"
-#include "src/communication/communication.h"
+#include "src/communication/common/communication.h"
 #include "src/util/log.h"
 
 

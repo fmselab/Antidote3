@@ -55,11 +55,11 @@ agent.lo: agent.c /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  ../src/communication/common/service.h communication/common/fsm.h \
- ../src/asn1/phd_types.h communication/communication.h \
+ ../src/asn1/phd_types.h communication/common/communication.h \
  communication/common/context_manager.h ../src/api/data_encoder.h \
  ../src/api/api_definitions.h ../src/api/data_list.h \
  ../src/communication/plugin/plugin.h \
- ../src/communication/communication.h \
+ ../src/communication/common/communication.h \
  ../src/communication/agent/agent_configuring.h \
  ../src/communication/common/stdconfigurations.h dim/mds.h dim/dim.h \
  dim/enumeration.h dim/metric.h dim/dim.h dim/numeric.h dim/rtsa.h \
@@ -214,7 +214,7 @@ communication/common/fsm.h:
 
 ../src/asn1/phd_types.h:
 
-communication/communication.h:
+communication/common/communication.h:
 
 communication/common/context_manager.h:
 
@@ -226,7 +226,7 @@ communication/common/context_manager.h:
 
 ../src/communication/plugin/plugin.h:
 
-../src/communication/communication.h:
+../src/communication/common/communication.h:
 
 ../src/communication/agent/agent_configuring.h:
 

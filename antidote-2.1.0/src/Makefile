@@ -449,7 +449,7 @@ antidote_include_communication_HEADERS = communication/common/context.h \
 					communication/common/fsm.h \
 					communication/agent/agent_fsm.h \
 					communication/manager/manager_fsm.h \
-					communication/communication.h
+					communication/common/communication.h
 
 antidote_include_dimdir = $(pkgincludedir)/dim
 antidote_include_dim_HEADERS = dim/mds.h \
