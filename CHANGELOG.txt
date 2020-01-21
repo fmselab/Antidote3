@@ -1,0 +1,5 @@
+CHANGELOG Antidote 3.0
+
+* Extended the limit of sequences changed from 3 to 1000 in the sample_agent, to avoid manager disconnection during the functioning.
+* Fixed the wrong transition "unassociated + req_assoc_abort -> unassociated + no response" in "unassociated + req_assoc_abort -> unassociated + abort"
+* Added the missing transition "checking_config + rx_aarq -> unassociated + abort"
