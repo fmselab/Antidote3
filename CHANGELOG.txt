@@ -2,4 +2,8 @@ CHANGELOG Antidote 3.0
 
 * Extended the limit of sequences changed from 3 to 1000 in the sample_agent, to avoid manager disconnection during the functioning.
 * Fixed the wrong transition "unassociated + req_assoc_abort -> unassociated + no response" in "unassociated + req_assoc_abort -> unassociated + abort"
+* Fixed the wrong transition "disassociating + rx_rors -> unassociated + abort". The previous version could reply with no response if a valid invoke id is provided, but the specification 
+  always requires abort as response.
+* Fixed the wrong transition "waiting_for_config + rx_roer" that have to check the invoke_id to decide whether reply with no response or with an abort
+* Fixed the wrong transition "waiting_for_config + rx_rorj" that have to check the invoke_id to decide whether reply with no response or with an abort
 * Added the missing transition "checking_config + rx_aarq -> unassociated + abort"
