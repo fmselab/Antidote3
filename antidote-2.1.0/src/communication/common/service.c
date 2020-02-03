@@ -529,7 +529,11 @@ int service_is_id_valid(Context *ctx, InvokeIDType invoke_id)
 	DEBUG("Is invoke id valid? %d", ctx->service->requests_list[invoke_id].is_valid);
 	return ctx->service->requests_list[invoke_id].is_valid == REQUEST_VALID;
 #else
-	return 1;
+
+	if (invoke_id==1)
+		return 1;
+	else
+		return 0;
 #endif
 }
 
@@ -576,7 +580,6 @@ static void service_change_state(Context *ctx, ServiceState new_state)
  */
 Request *service_check_known_invoke_id(Context *ctx, DATA_apdu *data_apdu)
 {
-
 	if (!service_is_id_valid(ctx, data_apdu->invoke_id)) {
 		communication_fire_evt(ctx, fsm_evt_req_assoc_abort, NULL);
 		return 0;

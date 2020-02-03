@@ -231,7 +231,7 @@ int main(int argc, char **argv)
 
 	manager_start();
 
-        // AB: Limit changed from 3 to 1000 to avoid the disconnection after three test sequences 
+    // AB: Limit changed from 3 to 1000 to avoid the disconnection after three test sequences
 	int x = 0;
 	while (x++ < 1000) {
 		plugin_network_tcp_connect(port);

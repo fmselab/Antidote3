@@ -27,17 +27,13 @@ uname -v = #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
+PATH: /usr/local/sbin
+PATH: /usr/local/bin
+PATH: /usr/sbin
+PATH: /usr/bin
 PATH: /sbin
 PATH: /bin
-PATH: /usr/bin
-PATH: /usr/local/bin
 PATH: /snap/bin
-PATH: /usr/lib/jvm/java-8-oracle/bin
-PATH: /usr/lib/jvm/java-8-oracle/db/bin
-PATH: /usr/lib/jvm/java-8-oracle/jre/bin
-PATH: /usr/lib/jvm/java-8-oracle/bin
-PATH: /usr/lib/jvm/java-8-oracle/db/bin
-PATH: /usr/lib/jvm/java-8-oracle/jre/bin
 
 
 ## ----------- ##

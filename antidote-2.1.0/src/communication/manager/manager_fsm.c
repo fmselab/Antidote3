@@ -89,8 +89,9 @@ static FsmTransitionRule IEEE11073_20601_manager_state_table[] = {
 	{fsm_state_waiting_for_config,	fsm_evt_rx_roiv_action,						fsm_state_waiting_for_config,	NULL}, // 6.25
 	{fsm_state_waiting_for_config,	fsm_evt_rx_roiv_confirmed_action,				fsm_state_waiting_for_config,	NULL}, // 6.25
 	{fsm_state_waiting_for_config,	fsm_evt_rx_rors,						fsm_state_waiting_for_config,	&communication_check_invoke_id_abort_tx}, // 6.26
-	{fsm_state_waiting_for_config,	fsm_evt_rx_roer,						fsm_state_waiting_for_config,	NULL}, // 6.26 - remark on page 147
-	{fsm_state_waiting_for_config,	fsm_evt_rx_rorj,						fsm_state_waiting_for_config,	NULL}, // 6.26 - remark on page 147
+	// AB: Two following lines modified. Before they return NO RESPONSE as response instead of checking the invoke id
+	{fsm_state_waiting_for_config,	fsm_evt_rx_roer,						fsm_state_waiting_for_config,	&communication_check_invoke_id_abort_tx}, // 6.26 - remark on page 147
+	{fsm_state_waiting_for_config,	fsm_evt_rx_rorj,						fsm_state_waiting_for_config,	&communication_check_invoke_id_abort_tx}, // 6.26 - remark on page 147
 	{fsm_state_waiting_for_config,	fsm_evt_req_agent_supplied_unknown_configuration,		fsm_state_waiting_for_config,	NULL}, // transcoding
 	{fsm_state_waiting_for_config,	fsm_evt_req_agent_supplied_known_configuration,			fsm_state_operating,		NULL}, // transcoding
 
@@ -150,7 +151,9 @@ static FsmTransitionRule IEEE11073_20601_manager_state_table[] = {
 	{fsm_state_disassociating,	fsm_evt_rx_rlre,						fsm_state_unassociated,		&disassociating_release_proccess_completed}, // 9.17
 	{fsm_state_disassociating,	fsm_evt_rx_abrt,						fsm_state_unassociated,		NULL}, // 9.18
 	{fsm_state_disassociating,	fsm_evt_rx_roiv,						fsm_state_disassociating,	NULL}, // 9.21
-	{fsm_state_disassociating,	fsm_evt_rx_rors,						fsm_state_unassociated,		&communication_check_invoke_id_abort_tx}, // 9.26 - remark on page 150
+	//{fsm_state_disassociating,	fsm_evt_rx_rors,						fsm_state_unassociated,		&communication_check_invoke_id_abort_tx}, // 9.26 - remark on page 150
+	// AB: Fixed: the IEEE specification requires abrt as response when rors is received in disassociating state
+	{fsm_state_disassociating,	fsm_evt_rx_rors,						fsm_state_unassociated,		&communication_abort_undefined_reason_tx}, // 9.26 - remark on page 150
 	{fsm_state_disassociating,	fsm_evt_rx_roer,						fsm_state_unassociated,		&communication_abort_undefined_reason_tx}, // 9.26 - remark on page 150
 	{fsm_state_disassociating,	fsm_evt_rx_rorj,						fsm_state_unassociated,		&communication_abort_undefined_reason_tx}, // 9.26 - remark on page 150
 

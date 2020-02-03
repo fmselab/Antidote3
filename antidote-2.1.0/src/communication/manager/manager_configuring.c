@@ -112,9 +112,11 @@ void configuring_waiting_state_process_apdu(Context *ctx, APDU *apdu)
 		} else if (communication_is_rors_type(input_data_apdu)) {
 			communication_fire_evt(ctx, fsm_evt_rx_rors, &evt);
 		} else if (communication_is_roer_type(input_data_apdu)) {
-			communication_fire_evt(ctx, fsm_evt_rx_roer, NULL);
+			// AB: The last parameter was NULL
+			communication_fire_evt(ctx, fsm_evt_rx_roer, &evt);
 		} else if (communication_is_rorj_type(input_data_apdu)) {
-			communication_fire_evt(ctx, fsm_evt_rx_rorj, NULL);
+			// AB: The last parameter was NULL
+			communication_fire_evt(ctx, fsm_evt_rx_rorj, &evt);
 		}
 
 	}
