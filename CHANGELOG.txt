@@ -7,3 +7,4 @@ CHANGELOG Antidote 3.0
 * Fixed the wrong transition "waiting_for_config + rx_roer" that have to check the invoke_id to decide whether reply with no response or with an abort
 * Fixed the wrong transition "waiting_for_config + rx_rorj" that have to check the invoke_id to decide whether reply with no response or with an abort
 * Added the missing transition "checking_config + rx_aarq -> unassociated + abort"
+* Added the management of events req_agent_supplied_unknown_configuration and req_agent_supplied_known_configuration in each state of the manager
